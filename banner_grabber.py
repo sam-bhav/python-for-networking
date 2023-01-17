@@ -6,7 +6,8 @@ def banner(ip,port):
     s = socket.socket
     s.connect((ip,int(port)))
     s.settimeout(5)
-    print(s.recv(1024))
+    # print(s.recv(1024))
+    print(str(s.recv(1024)))
 
 
 def main():
